@@ -1,12 +1,11 @@
-from sqlalchemy import create_engine
 from sqlalchemy import text, bindparam, String
 
 
 class ConceptFinder:
-    def __init__(self, username, password, hostname, port, database_name):
 
-        connection_string = f"postgresql+psycopg2://{username}:{password}@{hostname}:{port}/{database_name}"
-        self.engine = create_engine(connection_string)
+    def __init__(self, engine):
+
+        self.engine = engine
 
         query = """
         SELECT c1.concept_code as original_code, c2.*

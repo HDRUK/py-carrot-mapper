@@ -1,28 +1,97 @@
 import pandas as pd
 
-from .concept_finder import ConceptFinder
+
+class HealthDataElement:
+    destination_field_person = "person_id"
+    destination_table = ""
+    destination_field_datetime = ""
+    destination_field_concept_id = ""
+    destination_field_source = ""
+
+    @classmethod
+    def get_name(cls):
+        return cls.destination_table
+
+    @classmethod
+    def get(cls, person_id, date_event, source_table, source_field, term_mapping):
+        return {
+            cls.destination_field_person: {
+                "source_table": source_table,
+                "source_field": person_id,
+            },
+            cls.destination_field_datetime: {
+                "source_table": source_table,
+                "source_field": date_event,
+            },
+            cls.destination_field_concept_id: {
+                "source_table": source_table,
+                "source_field": source_field,
+                "term_mapping": term_mapping,
+            },
+            cls.destination_field_source: {
+                "source_table": source_table,
+                "source_field": source_field,
+            },
+        }
+
+
+class ConditionOccurrence(HealthDataElement):
+    destination_table = "condition_occurrence"
+    destination_field_datetime = "condition_start_datetime"
+    destination_field_concept_id = "condition_concept_id"
+    destination_field_source = "condition_source_value"
+
+
+class Person(HealthDataElement):
+    destination_table = "person"
+    destination_field_datetime = "birth_datetime"
+    destination_field_concept_id = "gender_concept_id"
+    destination_field_source = "gender_source_value"
+
+
+class ProcedureOccurrence(HealthDataElement):
+    destination_table = "procedure_occurrence"
+    destination_field_datetime = "procedure_datetime"
+    destination_field_concept_id = "procedure_concept_id"
+    destination_field_source = "procedure_source_value"
+
+
+class Measurement(HealthDataElement):
+    destination_table = "measurement"
+    destination_field_datetime = "measurement_datetime"
+    destination_field_concept_id = "measurement_concept_id"
+    destination_field_source = "measurement_source_value"
+
+
+class Observation(HealthDataElement):
+    destination_table = "observation"
+    destination_field_datetime = "observation_datetime"
+    destination_field_concept_id = "observation_concept_id"
+    destination_field_source = "observation_source_value"
 
 
 class ConceptMapper:
-    def __init__(self, **kwargs):
+    def __init__(self, concept_finder):
 
-        self.cf = ConceptFinder(**kwargs)
+        self.cf = concept_finder
         self.concept_map = {}
         self.hde_map = {
-            "gender": "person",
-            "measurement": "measurement",
-            "procedure": "procedure_occurrence",
-            "condition": "condition_occurrence",
-            "observation": "observation",
+            "gender": Person,
+            "measurement": Measurement,
+            "procedure": ProcedureOccurrence,
+            "condition": ConditionOccurrence,
+            "observation": Observation,
         }
 
     def set_scan_report(self, scan_report):
         self.scan_report = scan_report
 
-    def get_term_mapping(self, df, col):
+    def get_term_mapping(self, domain_name, source_field):
+        df_domain = self.df_mapped[self.df_mapped["domain_id"] == domain_name]
+
         retval = {}
-        for _, row in df.iterrows():
-            key = row[col]
+        for _, row in df_domain.iterrows():
+            key = row[source_field]
             value = int(row["concept_id"])
             existing_value = retval.get(key, None)
             if existing_value:
@@ -31,153 +100,36 @@ class ConceptMapper:
                 retval[key].append(value)
             else:
                 retval[key] = value
+
         return retval
 
-    def get_rules_conditions(self, source_table, person_id, date_event, conditions):
-
-        df_conditions = self.df_mapped[self.df_mapped["domain_id"] == "Condition"]
-
-        return {
-            "condition_concept_id": {
-                "source_table": source_table,
-                "source_field": conditions,
-                "term_mapping": self.get_term_mapping(df_conditions, conditions),
-            },
-            "condition_source_value": {
-                "source_table": source_table,
-                "source_field": conditions,
-            },
-            "condition_start_datetime": {
-                "source_table": source_table,
-                "source_field": date_event,
-            },
-            "person_id": {"source_table": source_table, "source_field": person_id},
-        }
-
-    def get_rules_person(self, source_table, person_id, date_event, source):
-
-        df_person = self.df_mapped[self.df_mapped["domain_id"] == "Gender"]
-
-        return {
-            "gender_concept_id": {
-                "source_table": source_table,
-                "source_field": source,
-                "term_mapping": self.get_term_mapping(df_person, source),
-            },
-            "gender_source_value": {
-                "source_table": source_table,
-                "source_field": source,
-            },
-            "birth_datetime": {
-                "source_table": source_table,
-                "source_field": date_event,
-            },
-            "person_id": {"source_table": source_table, "source_field": person_id},
-        }
-
-    def get_rules_procedure(self, source_table, person_id, date_event, source):
-
-        df_procedure = self.df_mapped[self.df_mapped["domain_id"] == "Procedure"]
-
-        return {
-            "procedure_concept_id": {
-                "source_table": source_table,
-                "source_field": source,
-                "term_mapping": self.get_term_mapping(df_procedure, source),
-            },
-            "procedure_source_value": {
-                "source_table": source_table,
-                "source_field": source,
-            },
-            "procedure_datetime": {
-                "source_table": source_table,
-                "source_field": date_event,
-            },
-            "person_id": {"source_table": source_table, "source_field": person_id},
-        }
-
-    def get_rules_measurement(self, source_table, person_id, date_event, source):
-
-        df_measurement = self.df_mapped[self.df_mapped["domain_id"] == "Measurement"]
-
-        return {
-            "measurement_concept_id": {
-                "source_table": source_table,
-                "source_field": source,
-                "term_mapping": self.get_term_mapping(df_measurement, source),
-            },
-            "measurement_source_value": {
-                "source_table": source_table,
-                "source_field": source,
-            },
-            "value_as_number": {"source_table": source_table, "source_field": source},
-            "measurement_datetime": {
-                "source_table": source_table,
-                "source_field": date_event,
-            },
-            "person_id": {"source_table": source_table, "source_field": person_id},
-        }
-
-    def get_rules_observation(self, source_table, person_id, date_event, source):
-
-        df_observation = self.df_mapped[self.df_mapped["domain_id"] == "Observation"]
-
-        return {
-            "observation_concept_id": {
-                "source_table": source_table,
-                "source_field": source,
-                "term_mapping": self.get_term_mapping(df_observation, source),
-            },
-            "observation_source_value": {
-                "source_table": source_table,
-                "source_field": source,
-            },
-            "observation_datetime": {
-                "source_table": source_table,
-                "source_field": date_event,
-            },
-            "person_id": {"source_table": source_table, "source_field": person_id},
-        }
-
-    def get_rules(self, domain):
-        if domain == "condition_occurrence":
-            return self.get_rules_conditions
-        elif domain == "person":
-            return self.get_rules_person
-        elif domain == "procedure_occurrence":
-            return self.get_rules_procedure
-        elif domain == "measurement":
-            return self.get_rules_measurement
-        elif domain == "observation":
-            return self.get_rules_observation
-        else:
-            raise Exception(f"Unknown domain '{domain}'")
-
-    def map(self, table, source, person_id, date_event):
+    def map(self, source_table, source_field, person_id, date_event, one_to_one=False):
         if not self.scan_report:
             raise Exception("scan_report not defined. Use mapper.set_scan_report()")
 
-        df = self.scan_report[table].astype(str)
+        df = self.scan_report[source_table].astype(str)
 
-        if isinstance(source, dict):
-            source, mapping = list(source.items())[0]
-            name = table + ":" + source
+        if isinstance(source_field, dict):
+            source_field, mapping = list(source_field.items())[0]
+            name = source_table + ":" + source_field
             for field, concept_id in mapping.items():
                 mapping[field] = self.cf.find_concept(concept_id, field)
             concept_map = mapping
         else:
-            name = table + ":" + source
-            codes = df[source].to_list()
+            name = source_table + ":" + source_field
+            codes = df[source_field].to_list()
             concept_map = self.cf.find(codes)
 
         self.concept_map[name] = concept_map
 
         df_mapped = (
-            df.set_index(source)
+            df.set_index(source_field)
             .join(
-                pd.json_normalize(df[source].map(concept_map).explode()).set_index(
-                    "original_code"
-                )[["concept_id", "concept_name", "domain_id"]]
+                pd.json_normalize(
+                    df[source_field].map(concept_map).explode()
+                ).set_index("original_code")[
+                    ["concept_id", "concept_name", "domain_id"]
+                ]
             )
             .reset_index()
             .dropna(subset="domain_id")
@@ -186,9 +138,30 @@ class ConceptMapper:
         self.df_mapped = df_mapped
 
         rules = {}
-        for domain in df_mapped["domain_id"].unique():
-            domain = domain.lower()
-            hde = self.hde_map[domain]
-            rules[hde] = self.get_rules(hde)(table, person_id, date_event, source)
+        for domain_name in df_mapped["domain_id"].unique():
+            hde = self.hde_map[domain_name.lower()]
+            term_mapping = self.get_term_mapping(domain_name, source_field)
+
+            rule = None
+            if one_to_one == True:
+                rule = []
+                for source_value, mapped_values in term_mapping.items():
+                    if not isinstance(mapped_values, list):
+                        mapped_values = [mapped_values]
+                    for mapped_value in mapped_values:
+                        rule.append(
+                            hde.get(
+                                person_id,
+                                date_event,
+                                source_table,
+                                source_field,
+                                {source_value: mapped_value},
+                            )
+                        )
+            else:
+                rule = hde.get(
+                    person_id, date_event, source_table, source_field, term_mapping
+                )
+            rules[hde.get_name()] = rule
 
         return rules
