@@ -1,0 +1,303 @@
+{
+      "cdm": {
+            "person": {
+                  "person_0": {
+                        "person_id": {
+                              "source_table": "demographics.csv",
+                              "source_field": "encrypted_id"
+                        },
+                        "birth_datetime": {
+                              "source_table": "demographics.csv",
+                              "source_field": "dob"
+                        },
+                        "gender_concept_id": {
+                              "source_table": "demographics.csv",
+                              "source_field": "sex",
+                              "term_mapping": {
+                                    "1": 8507,
+                                    "2": 8532
+                              }
+                        },
+                        "gender_source_value": {
+                              "source_table": "demographics.csv",
+                              "source_field": "sex"
+                        }
+                  }
+            },
+            "condition_occurrence": {
+                  "condition_occurrence_0": {
+                        "person_id": {
+                              "source_table": "smr04_operations.csv",
+                              "source_field": "encrypted_id"
+                        },
+                        "condition_start_datetime": {
+                              "source_table": "smr04_operations.csv",
+                              "source_field": "clinic_date"
+                        },
+                        "condition_concept_id": {
+                              "source_table": "smr04_operations.csv",
+                              "source_field": "operation_new",
+                              "term_mapping": {
+                                    "A83.8": 372547,
+                                    "A83.9": 372547
+                              }
+                        },
+                        "condition_source_value": {
+                              "source_table": "smr04_operations.csv",
+                              "source_field": "operation_new"
+                        }
+                  }
+            },
+            "measurement": {
+                  "measurement_1": {
+                        "person_id": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "encrypted_id"
+                        },
+                        "measurement_datetime": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "clinic_date"
+                        },
+                        "measurement_concept_id": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "newcondition",
+                              "term_mapping": {
+                                    "D70": 4148615,
+                                    "R73.0": 4012477,
+                                    "R74.0": 436238,
+                                    "R79.8": 4014134,
+                                    "R79.9": 4014134,
+                                    "R82.5": 37203926,
+                                    "R82.9": 4099313,
+                                    "R94.4": 40481305,
+                                    "R94.5": 4098135
+                              }
+                        },
+                        "measurement_source_value": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "newcondition"
+                        }
+                  }
+            },
+            "observation": {
+                  "observation_2": {
+                        "person_id": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "encrypted_id"
+                        },
+                        "observation_datetime": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "clinic_date"
+                        },
+                        "observation_concept_id": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "newcondition",
+                              "term_mapping": {
+                                    "F31.30": 4088609,
+                                    "F54": 4094235,
+                                    "F64.0": 4231241,
+                                    "F64.1": 43021205,
+                                    "F81.8": 440382,
+                                    "H93.1": 377575,
+                                    "N31.9": 199075,
+                                    "N92.0": 197607,
+                                    "N95.0": 195321,
+                                    "Q02": 606878,
+                                    "R01.1": 316822,
+                                    "R03.0": 141693,
+                                    "R13": 4121038,
+                                    "R26.2": 36714126,
+                                    "R26.8": 437643,
+                                    "R29.6": 4059015,
+                                    "R31": 437038,
+                                    "R40.1": 4229897,
+                                    "R41.0": 4268911,
+                                    "R41.8": 4293175,
+                                    "R45.0": 436817,
+                                    "R45.1": 4168212,
+                                    "R45.2": 4169106,
+                                    "R45.3": 4025215,
+                                    "R45.4": 4168681,
+                                    "R45.5": 4195585,
+                                    "R45.6": 4085332,
+                                    "R45.7": 4025215,
+                                    "R45.8": 4025215,
+                                    "R46.0": 4251913,
+                                    "R46.2": 4168682,
+                                    "R46.8": 4309063,
+                                    "R53": 439926,
+                                    "R54": 4090207,
+                                    "R55": 372448,
+                                    "R62.0": 436233,
+                                    "R63.0": 442165,
+                                    "R63.3": 4299954,
+                                    "R63.4": 435928,
+                                    "R63.6": 435372,
+                                    "R63.8": 4022569,
+                                    "R68.8": 441840,
+                                    "R99": 441413,
+                                    "T71": 4279614,
+                                    "T74.2": 443080,
+                                    "T88.7": 441207,
+                                    "V03.1": [
+                                          442451,
+                                          4145511,
+                                          441188
+                                    ],
+                                    "V49.9": [
+                                          437165,
+                                          440897
+                                    ],
+                                    "W01.0": 437175,
+                                    "W01.1": 437175,
+                                    "W10.0": 435172,
+                                    "W13.9": 441201,
+                                    "W18.2": 4236512,
+                                    "W26.9": 441193,
+                                    "X71.0": 4303690,
+                                    "X71.8": 4303690,
+                                    "X71.9": 4303690,
+                                    "X78.0": 4092411,
+                                    "X78.1": 4092411,
+                                    "X78.2": 4092411,
+                                    "X78.8": 4092411,
+                                    "X78.9": 4092411,
+                                    "X83.0": 4092411,
+                                    "Y07.9": 4113020,
+                                    "Y28.0": 4315372,
+                                    "Y83.1": 4320824,
+                                    "Z00.0": 4203722,
+                                    "Z03.6": 4203722,
+                                    "Z03.8": 4203722,
+                                    "Z04.6": 4203722,
+                                    "Z04.8": 4203722,
+                                    "Z33": 4307820,
+                                    "Z51.1": 4203722,
+                                    "Z51.5": 4203722,
+                                    "Z51.8": 4203722,
+                                    "Z53.2": 4168192,
+                                    "Z53.8": 4168192,
+                                    "Z55.0": 4059786,
+                                    "Z55.9": 4261613,
+                                    "Z56.0": 4251171,
+                                    "Z56.3": 37108964,
+                                    "Z56.4": 4022658,
+                                    "Z56.6": 4326265,
+                                    "Z59.0": 4139934,
+                                    "Z59.1": 4022661,
+                                    "Z59.2": 43020462,
+                                    "Z59.8": 4154624,
+                                    "Z59.9": 4154624,
+                                    "Z60.2": 4023168,
+                                    "Z60.3": 4022639,
+                                    "Z60.4": 4019836,
+                                    "Z60.5": 4217086,
+                                    "Z60.8": 43021867,
+                                    "Z60.9": 43021867,
+                                    "Z62.0": 762059,
+                                    "Z62.2": 43020486,
+                                    "Z62.8": 43020486,
+                                    "Z62.9": 43020486,
+                                    "Z63.0": 43020416,
+                                    "Z63.1": 43020487,
+                                    "Z63.3": 4105261,
+                                    "Z63.4": 36712857,
+                                    "Z63.5": 4296024,
+                                    "Z63.6": 43020469,
+                                    "Z63.7": 439664,
+                                    "Z63.8": 4094126,
+                                    "Z63.9": 4154624,
+                                    "Z64.0": 43021845,
+                                    "Z65.0": 4329840,
+                                    "Z65.1": 4166675,
+                                    "Z65.2": 43020488,
+                                    "Z65.3": 4329840,
+                                    "Z65.4": 4279142,
+                                    "Z65.8": 4107655,
+                                    "Z65.9": 4107655,
+                                    "Z71.1": 4216670,
+                                    "Z71.3": 4174707,
+                                    "Z72.4": 42872393,
+                                    "Z72.5": 4012570,
+                                    "Z72.6": 4023166,
+                                    "Z72.8": 46286594,
+                                    "Z72.9": 46286594,
+                                    "Z73.1": 43020481,
+                                    "Z73.3": 4251306,
+                                    "Z73.4": 43020479,
+                                    "Z73.6": 4137049,
+                                    "Z73.8": 43020485,
+                                    "Z73.9": 43020485,
+                                    "Z74.0": 4310235,
+                                    "Z74.1": 42535090,
+                                    "Z74.2": 42535090,
+                                    "Z74.3": 4022076,
+                                    "Z74.8": 4022076,
+                                    "Z74.9": 4022076,
+                                    "Z75.0": 4082086,
+                                    "Z75.1": 4148887,
+                                    "Z75.2": 4148887,
+                                    "Z75.5": 4019827,
+                                    "Z75.8": 4145781,
+                                    "Z76.2": 4203722,
+                                    "Z76.3": 4303295,
+                                    "Z76.5": 4051630,
+                                    "Z76.8": 4203722,
+                                    "Z81.1": 44791635,
+                                    "Z81.3": 4167217,
+                                    "Z81.8": 4051568,
+                                    "Z82.0": 4178537,
+                                    "Z88.0": 439224,
+                                    "Z88.9": 439224,
+                                    "Z90.5": 4092879,
+                                    "Z91.0": 43530807,
+                                    "Z93.1": 4201388,
+                                    "Z93.2": 4201717,
+                                    "Z93.3": 4201390,
+                                    "Z94.0": 42539502,
+                                    "Z95.1": 42537729,
+                                    "Z95.2": 42538119,
+                                    "Z95.4": 42538119,
+                                    "Z95.5": 42537730,
+                                    "Z96.6": 4152780,
+                                    "Z99.2": 4019967,
+                                    "Z99.3": 4022073,
+                                    "Z99.8": 437758
+                              }
+                        },
+                        "observation_source_value": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "newcondition"
+                        }
+                  }
+            },
+            "procedure_occurrence": {
+                  "procedure_occurrence_3": {
+                        "person_id": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "encrypted_id"
+                        },
+                        "procedure_datetime": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "clinic_date"
+                        },
+                        "procedure_concept_id": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "newcondition",
+                              "term_mapping": {
+                                    "R90.8": 40481383,
+                                    "R91": 40480054,
+                                    "R94.3": 4154495
+                              }
+                        },
+                        "procedure_source_value": {
+                              "source_table": "smr04_conditions.csv",
+                              "source_field": "newcondition"
+                        }
+                  }
+            }
+      },
+      "metadata": {
+            "dataset": "PHS_SMR04"
+      }
+}
