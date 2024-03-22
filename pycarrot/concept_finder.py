@@ -15,6 +15,9 @@ class ConceptFinder:
         WHERE c1.concept_code IN :concept_codes
         AND c1.vocabulary_id = :vocabulary_id
         AND cr.relationship_id = :relationship_id
+        AND c2.vocabulary_id = 'SNOMED'
+        AND c2.standard_concept = 'S'
+        AND c2.invalid_reason IS NULL 
         """
 
         self.stmt = text(query)
@@ -45,7 +48,7 @@ class ConceptFinder:
 
             return retval
 
-    def find_concept(self, concept_id, source):
+    def find_concept(self, concept_id, source=None):
         query = """
         SELECT *
         FROM public."CONCEPT" c
@@ -62,7 +65,8 @@ class ConceptFinder:
             result_dicts = [dict(zip(column_names, row)) for row in result]
             retval = []
             for r in result_dicts:
-                r["original_code"] = source
+                if source:
+                    r["original_code"] = source
                 retval.append(r)
 
             return retval

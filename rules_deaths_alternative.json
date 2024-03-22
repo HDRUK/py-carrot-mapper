@@ -6778,7 +6778,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C40.9": 4180312
+                                    "C40.9": 444203
                               }
                         },
                         "condition_source_value": {
@@ -6799,7 +6799,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C40.9": 444203
+                                    "C40.9": 4180312
                               }
                         },
                         "condition_source_value": {
@@ -6988,7 +6988,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C43.3": 136917
+                                    "C43.3": 133713
                               }
                         },
                         "condition_source_value": {
@@ -7009,7 +7009,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C43.3": 133713
+                                    "C43.3": 136917
                               }
                         },
                         "condition_source_value": {
@@ -7114,7 +7114,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C43.7": 4312685
+                                    "C43.7": 4151263
                               }
                         },
                         "condition_source_value": {
@@ -7135,7 +7135,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C43.7": 4151263
+                                    "C43.7": 4312685
                               }
                         },
                         "condition_source_value": {
@@ -7177,7 +7177,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C43.9": 141232
+                                    "C43.9": 139750
                               }
                         },
                         "condition_source_value": {
@@ -7198,7 +7198,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C43.9": 139750
+                                    "C43.9": 141232
                               }
                         },
                         "condition_source_value": {
@@ -7345,7 +7345,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C44.6": 4162994
+                                    "C44.6": 81239
                               }
                         },
                         "condition_source_value": {
@@ -7366,7 +7366,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C44.6": 81239
+                                    "C44.6": 4162994
                               }
                         },
                         "condition_source_value": {
@@ -7387,7 +7387,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C44.7": 4162993
+                                    "C44.7": 201518
                               }
                         },
                         "condition_source_value": {
@@ -7408,7 +7408,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "C44.7": 201518
+                                    "C44.7": 4162993
                               }
                         },
                         "condition_source_value": {
@@ -16795,7 +16795,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E10.1": 439770
+                                    "E10.1": 201254
                               }
                         },
                         "condition_source_value": {
@@ -16816,7 +16816,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E10.1": 201254
+                                    "E10.1": 439770
                               }
                         },
                         "condition_source_value": {
@@ -17152,7 +17152,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E11.6": 442793
+                                    "E11.6": 201826
                               }
                         },
                         "condition_source_value": {
@@ -17173,7 +17173,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E11.6": 201826
+                                    "E11.6": 442793
                               }
                         },
                         "condition_source_value": {
@@ -17257,7 +17257,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E13.8": 201820
+                                    "E13.8": 442793
                               }
                         },
                         "condition_source_value": {
@@ -17278,7 +17278,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E13.8": 442793
+                                    "E13.8": 201820
                               }
                         },
                         "condition_source_value": {
@@ -18370,7 +18370,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E46": 4156515
+                                    "E46": 433163
                               }
                         },
                         "condition_source_value": {
@@ -18391,7 +18391,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "E46": 433163
+                                    "E46": 4156515
                               }
                         },
                         "condition_source_value": {
@@ -20848,7 +20848,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "F19.9": 4239381
+                                    "F19.9": 37162280
                               }
                         },
                         "condition_source_value": {
@@ -20869,7 +20869,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "F19.9": 37162280
+                                    "F19.9": 4239381
                               }
                         },
                         "condition_source_value": {
@@ -23788,7 +23788,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "G31.9": 376337
+                                    "G31.9": 4179873
                               }
                         },
                         "condition_source_value": {
@@ -23809,7 +23809,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "G31.9": 4179873
+                                    "G31.9": 376337
                               }
                         },
                         "condition_source_value": {
@@ -24019,7 +24019,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "G40.1": 4044082
+                                    "G40.1": 43530626
                               }
                         },
                         "condition_source_value": {
@@ -24040,7 +24040,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "G40.1": 43530626
+                                    "G40.1": 4044082
                               }
                         },
                         "condition_source_value": {
@@ -29479,7 +29479,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "I26.0": 312927
+                                    "I26.0": 440417
                               }
                         },
                         "condition_source_value": {
@@ -29500,7 +29500,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "I26.0": 440417
+                                    "I26.0": 312927
                               }
                         },
                         "condition_source_value": {
@@ -31684,7 +31684,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "I61.0": 43530727
+                                    "I61.0": 4049659
                               }
                         },
                         "condition_source_value": {
@@ -31705,7 +31705,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "I61.0": 4049659
+                                    "I61.0": 43530727
                               }
                         },
                         "condition_source_value": {
@@ -32209,7 +32209,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "I65.0": 43022059
+                                    "I65.0": 255919
                               }
                         },
                         "condition_source_value": {
@@ -32230,7 +32230,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "I65.0": 255919
+                                    "I65.0": 43022059
                               }
                         },
                         "condition_source_value": {
@@ -34645,7 +34645,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J10.0": 36714388
+                                    "J10.0": 256723
                               }
                         },
                         "condition_source_value": {
@@ -34666,7 +34666,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J10.0": 256723
+                                    "J10.0": 36714388
                               }
                         },
                         "condition_source_value": {
@@ -34687,7 +34687,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J10.1": 36714388
+                                    "J10.1": 46273463
                               }
                         },
                         "condition_source_value": {
@@ -34708,7 +34708,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J10.1": 46273463
+                                    "J10.1": 36714388
                               }
                         },
                         "condition_source_value": {
@@ -34729,7 +34729,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J10.8": 36714388
+                                    "J10.8": 320752
                               }
                         },
                         "condition_source_value": {
@@ -34750,7 +34750,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J10.8": 320752
+                                    "J10.8": 36714388
                               }
                         },
                         "condition_source_value": {
@@ -36766,7 +36766,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J84.1": 4197819
+                                    "J84.1": 4119786
                               }
                         },
                         "condition_source_value": {
@@ -36787,7 +36787,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "J84.1": 4119786
+                                    "J84.1": 4197819
                               }
                         },
                         "condition_source_value": {
@@ -41638,7 +41638,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "K71.0": 4143915
+                                    "K71.0": 4055224
                               }
                         },
                         "condition_source_value": {
@@ -41659,7 +41659,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "K71.0": 4055224
+                                    "K71.0": 4143915
                               }
                         },
                         "condition_source_value": {
@@ -41680,7 +41680,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "K71.1": 4337543
+                                    "K71.1": 4055224
                               }
                         },
                         "condition_source_value": {
@@ -41701,7 +41701,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "K71.1": 4055224
+                                    "K71.1": 4337543
                               }
                         },
                         "condition_source_value": {
@@ -41743,7 +41743,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "K71.7": 4064161
+                                    "K71.7": 4055224
                               }
                         },
                         "condition_source_value": {
@@ -41764,7 +41764,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "K71.7": 4055224
+                                    "K71.7": 4064161
                               }
                         },
                         "condition_source_value": {
@@ -43780,7 +43780,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "L05.0": 4165681
+                                    "L05.0": 4033662
                               }
                         },
                         "condition_source_value": {
@@ -43801,7 +43801,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "L05.0": 4033662
+                                    "L05.0": 4165681
                               }
                         },
                         "condition_source_value": {
@@ -43843,7 +43843,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "L05.9": 4165681
+                                    "L05.9": 4033662
                               }
                         },
                         "condition_source_value": {
@@ -43864,7 +43864,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "L05.9": 4033662
+                                    "L05.9": 4165681
                               }
                         },
                         "condition_source_value": {
@@ -45544,7 +45544,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M05.1": 80809
+                                    "M05.1": 256197
                               }
                         },
                         "condition_source_value": {
@@ -45565,7 +45565,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M05.1": 256197
+                                    "M05.1": 80809
                               }
                         },
                         "condition_source_value": {
@@ -45607,7 +45607,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M05.3": 319825
+                                    "M05.3": 80809
                               }
                         },
                         "condition_source_value": {
@@ -45628,7 +45628,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M05.3": 80809
+                                    "M05.3": 319825
                               }
                         },
                         "condition_source_value": {
@@ -47224,7 +47224,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M43.4": 4135077
+                                    "M43.4": 81939
                               }
                         },
                         "condition_source_value": {
@@ -47245,7 +47245,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M43.4": 81939
+                                    "M43.4": 4135077
                               }
                         },
                         "condition_source_value": {
@@ -47266,7 +47266,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M43.5": 4138152
+                                    "M43.5": 4346965
                               }
                         },
                         "condition_source_value": {
@@ -47287,7 +47287,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M43.5": 4346965
+                                    "M43.5": 4138152
                               }
                         },
                         "condition_source_value": {
@@ -47455,7 +47455,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M46.5": 4153359
+                                    "M46.5": 4262590
                               }
                         },
                         "condition_source_value": {
@@ -47476,7 +47476,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "M46.5": 4262590
+                                    "M46.5": 4153359
                               }
                         },
                         "condition_source_value": {
@@ -50227,7 +50227,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "N05.2": 4298809
+                                    "N05.2": 252365
                               }
                         },
                         "condition_source_value": {
@@ -50248,7 +50248,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "N05.2": 252365
+                                    "N05.2": 4298809
                               }
                         },
                         "condition_source_value": {
@@ -50353,7 +50353,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "N05.7": 4298809
+                                    "N05.7": 4272486
                               }
                         },
                         "condition_source_value": {
@@ -50374,7 +50374,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "N05.7": 4272486
+                                    "N05.7": 4298809
                               }
                         },
                         "condition_source_value": {
@@ -53587,7 +53587,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "N99.8": 4171379
+                                    "N99.8": 442019
                               }
                         },
                         "condition_source_value": {
@@ -53608,7 +53608,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "N99.8": 442019
+                                    "N99.8": 4171379
                               }
                         },
                         "condition_source_value": {
@@ -53797,7 +53797,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O22.3": 439658
+                                    "O22.3": 435887
                               }
                         },
                         "condition_source_value": {
@@ -53818,7 +53818,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O22.3": 435887
+                                    "O22.3": 439658
                               }
                         },
                         "condition_source_value": {
@@ -54133,7 +54133,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O90.3": 444094
+                                    "O90.3": 4037495
                               }
                         },
                         "condition_source_value": {
@@ -54154,7 +54154,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O90.3": 4037495
+                                    "O90.3": 444094
                               }
                         },
                         "condition_source_value": {
@@ -54175,7 +54175,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O98.8": 444094
+                                    "O98.8": 433823
                               }
                         },
                         "condition_source_value": {
@@ -54196,7 +54196,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O98.8": 433823
+                                    "O98.8": 444094
                               }
                         },
                         "condition_source_value": {
@@ -54301,7 +54301,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.3": 444094
+                                    "O99.3": 4063155
                               }
                         },
                         "condition_source_value": {
@@ -54322,7 +54322,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.3": 4063155
+                                    "O99.3": 444094
                               }
                         },
                         "condition_source_value": {
@@ -54343,7 +54343,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.4": 444094
+                                    "O99.4": 37110290
                               }
                         },
                         "condition_source_value": {
@@ -54364,7 +54364,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.4": 37110290
+                                    "O99.4": 444094
                               }
                         },
                         "condition_source_value": {
@@ -54385,7 +54385,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.5": 444094
+                                    "O99.5": 4060429
                               }
                         },
                         "condition_source_value": {
@@ -54406,7 +54406,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.5": 4060429
+                                    "O99.5": 444094
                               }
                         },
                         "condition_source_value": {
@@ -54427,7 +54427,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.6": 444094
+                                    "O99.6": 4062790
                               }
                         },
                         "condition_source_value": {
@@ -54448,7 +54448,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "O99.6": 4062790
+                                    "O99.6": 444094
                               }
                         },
                         "condition_source_value": {
@@ -56044,7 +56044,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "P39.9": 432250
+                                    "P39.9": 435875
                               }
                         },
                         "condition_source_value": {
@@ -56065,7 +56065,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "P39.9": 435875
+                                    "P39.9": 432250
                               }
                         },
                         "condition_source_value": {
@@ -64738,7 +64738,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S13.1": 4134171
+                                    "S13.1": 80497
                               }
                         },
                         "condition_source_value": {
@@ -64759,7 +64759,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S13.1": 80497
+                                    "S13.1": 4134171
                               }
                         },
                         "condition_source_value": {
@@ -65179,7 +65179,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S23.1": 4134171
+                                    "S23.1": 4095851
                               }
                         },
                         "condition_source_value": {
@@ -65200,7 +65200,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S23.1": 4095851
+                                    "S23.1": 4134171
                               }
                         },
                         "condition_source_value": {
@@ -65788,7 +65788,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S31.4": 4239520
+                                    "S31.4": 4133009
                               }
                         },
                         "condition_source_value": {
@@ -65809,7 +65809,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S31.4": 4133009
+                                    "S31.4": 4239520
                               }
                         },
                         "condition_source_value": {
@@ -67699,7 +67699,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S83.0": 4151986
+                                    "S83.0": 4136565
                               }
                         },
                         "condition_source_value": {
@@ -67720,7 +67720,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S83.0": 4136565
+                                    "S83.0": 4238518
                               }
                         },
                         "condition_source_value": {
@@ -67741,7 +67741,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S83.0": 4238518
+                                    "S83.0": 4151986
                               }
                         },
                         "condition_source_value": {
@@ -67783,7 +67783,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S83.1": 4324765
+                                    "S83.1": 438515
                               }
                         },
                         "condition_source_value": {
@@ -67804,7 +67804,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "S83.1": 438515
+                                    "S83.1": 4324765
                               }
                         },
                         "condition_source_value": {
@@ -73369,7 +73369,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "Y83.3": 434547
+                                    "Y83.3": 4123283
                               }
                         },
                         "condition_source_value": {
@@ -73390,7 +73390,7 @@
                               "source_table": "deaths_a.csv",
                               "source_field": "causedeath",
                               "term_mapping": {
-                                    "Y83.3": 4123283
+                                    "Y83.3": 434547
                               }
                         },
                         "condition_source_value": {
